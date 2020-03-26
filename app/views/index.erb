@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>All Articles</h1>
+    <% @articles.each.with_index(1) do |article, i| %>
+    <p><%= "#{i}. #{article.title}" %></p>
+    <p>Content: <%= "#{article.content}" %></p>
+    <% end %>
+  </body>
+</html>
