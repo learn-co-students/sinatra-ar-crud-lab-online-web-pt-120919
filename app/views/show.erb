@@ -1,4 +1,7 @@
-#<% @articles.all.each do |article| %>
-    <%= @articles.title %>
-    <%= @articles.content %>
-#<%end%>
+<h1><%= @articles.title %></h1>
+<p><%= @articles.content %><p>
+
+<form method="post" action="/articles/<%=@articles.id%>">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input type="submit" value="delete">
+</form>
