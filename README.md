@@ -14,7 +14,7 @@ you'll be building a basic magazine app, using every CRUD action.
 controller matters. Routes are matched in the order they are defined. So, if we
 were to define the `get '/articles/:id'` route _before_ the `get '/articles/new'`
 route, Sinatra would feed all requests for `/articles/new` to the `/articles/:id`
-route and we should see an error telling us that your app is unable to find an
+route and we should see an error telling us that your app is unable to find anhttps://learn.co/tracks/online-software-engineering-structured/sinatra/activerecord/sinatra-activerecord-crud#
 `Article` instance with an `id` of `"new"`. The takeaway is that you should define
 your `/articles/new` route _before_ your `/articles/:id` route.
 
