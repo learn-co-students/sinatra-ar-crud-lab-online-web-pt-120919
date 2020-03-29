@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>my favorite article</title>
-  </head>
-  <body>
-
-  <%= @articles.title %>
+<%= @articles.title %>
   <%= @articles.content %>
 
-    <form method="post" action="/posts/<%=@articles.id%>/delete">
+    <form method="post" action="/articles/<%=@articles.id%>">
       <input id="hidden" name = "_method" value="delete">
       <input type="submit" value="delete">
     </form>
-
-  </body>
-</html> 
