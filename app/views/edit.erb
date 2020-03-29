@@ -6,12 +6,12 @@
   </head>
   <body>
 
-   <form method = "post" action="/posts/<%=@post.id%>">
+   <form method = "Article" action="/articles/<%=articles.id%>">
 
     <input id="hidden" type="hidden" name="_method" value="patch">
-    Name<input type = "text" value = "<%= @post.title%>" name="name">
-    Contents<input type="text" value="<%= @post.content%>" name = "content">
-    <input type="submit" value="submit">
+    Name<input type = "text" value = "<%= @articles.title%>" name="name">
+    Contents<input type="text" value="<%= @articles.content%>" name = "content">
+    <input type ="submit" value="submit">
 
   </form>
 

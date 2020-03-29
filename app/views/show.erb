@@ -6,10 +6,10 @@
   </head>
   <body>
 
-  <%= @post.title %>
-  <%= @post.content %>
+  <%= @articles.title %>
+  <%= @articles.content %>
 
-    <form method="post" action="/posts/<%=@post.id%>/delete">
+    <form method="post" action="/posts/<%=@articles.id%>/delete">
       <input id="hidden" name = "_method" value="delete">
       <input type="submit" value="delete">
     </form>
