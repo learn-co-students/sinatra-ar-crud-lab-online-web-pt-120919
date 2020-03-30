@@ -1,0 +1,11 @@
+# shows a list of _all_ of the articles
+
+<ul>
+<% @articles.each do |article| %>
+  <li>
+    <a href="/articles/<%= article.id %>">
+      <%= article.title %> 
+    </a>
+  </li>
+<% end %>
+</ul>
